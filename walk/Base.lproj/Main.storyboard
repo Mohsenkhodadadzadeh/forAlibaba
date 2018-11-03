@@ -39,7 +39,7 @@
                                 <rect key="frame" x="20" y="617" width="34" height="30"/>
                                 <state key="normal" title="Walk"/>
                                 <connections>
-                                    <action selector="favoriteClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRx-fy-r8k"/>
+                                    <action selector="walkClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="4LR-H3-QFm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs5-8V-Me8">
@@ -105,6 +105,9 @@
                                     <constraint firstAttribute="width" constant="85" id="KV3-uX-cvx"/>
                                 </constraints>
                                 <state key="normal" title="Like"/>
+                                <connections>
+                                    <action selector="favoriteClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="QV3-dT-UpI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

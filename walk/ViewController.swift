@@ -145,6 +145,8 @@ class ViewController: UIViewController {
         
         let dataArray = NSArray(contentsOfFile: path!)!
         
+        
+        
         for dict in dataArray {
             let entity = NSEntityDescription.entity(forEntityName: "Walk", in: managedContext)!
             let walk = Walk(entity: entity , insertInto: managedContext)
