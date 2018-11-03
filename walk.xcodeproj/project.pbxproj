@@ -13,6 +13,9 @@
 		085DEC9821832DF500CCC419 /* walk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 085DEC9621832DF500CCC419 /* walk.xcdatamodeld */; };
 		085DEC9A21832DF500CCC419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 085DEC9921832DF500CCC419 /* Assets.xcassets */; };
 		085DEC9D21832DF500CCC419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085DEC9B21832DF500CCC419 /* LaunchScreen.storyboard */; };
+		085DECA52183385500CCC419 /* SampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 085DECA42183385500CCC419 /* SampleData.plist */; };
+		08F92853218B713C00A661A8 /* Walk+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F92851218B713C00A661A8 /* Walk+CoreDataClass.swift */; };
+		08F92854218B713C00A661A8 /* Walk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F92852218B713C00A661A8 /* Walk+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		085DEC9921832DF500CCC419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		085DEC9C21832DF500CCC419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		085DEC9E21832DF500CCC419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		085DECA42183385500CCC419 /* SampleData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SampleData.plist; sourceTree = "<group>"; };
+		08F92851218B713C00A661A8 /* Walk+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Walk+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08F92852218B713C00A661A8 /* Walk+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Walk+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		085DEC8E21832DF500CCC419 /* walk */ = {
 			isa = PBXGroup;
 			children = (
-				085DEC8F21832DF500CCC419 /* AppDelegate.swift */,
+				087B0719218B387B0046CFC8 /* Supporting file */,
+				087B0718218B38630046CFC8 /* CoreData */,
 				085DEC9121832DF500CCC419 /* ViewController.swift */,
 				085DEC9321832DF500CCC419 /* Main.storyboard */,
-				085DEC9921832DF500CCC419 /* Assets.xcassets */,
+				085DECA42183385500CCC419 /* SampleData.plist */,
 				085DEC9B21832DF500CCC419 /* LaunchScreen.storyboard */,
-				085DEC9E21832DF500CCC419 /* Info.plist */,
-				085DEC9621832DF500CCC419 /* walk.xcdatamodeld */,
 			);
 			path = walk;
+			sourceTree = "<group>";
+		};
+		087B0718218B38630046CFC8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				08F92851218B713C00A661A8 /* Walk+CoreDataClass.swift */,
+				08F92852218B713C00A661A8 /* Walk+CoreDataProperties.swift */,
+				085DEC9621832DF500CCC419 /* walk.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		087B0719218B387B0046CFC8 /* Supporting file */ = {
+			isa = PBXGroup;
+			children = (
+				085DEC8F21832DF500CCC419 /* AppDelegate.swift */,
+				085DEC9921832DF500CCC419 /* Assets.xcassets */,
+				085DEC9E21832DF500CCC419 /* Info.plist */,
+			);
+			path = "Supporting file";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +153,7 @@
 			files = (
 				085DEC9D21832DF500CCC419 /* LaunchScreen.storyboard in Resources */,
 				085DEC9A21832DF500CCC419 /* Assets.xcassets in Resources */,
+				085DECA52183385500CCC419 /* SampleData.plist in Resources */,
 				085DEC9521832DF500CCC419 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +167,8 @@
 			files = (
 				085DEC9221832DF500CCC419 /* ViewController.swift in Sources */,
 				085DEC9821832DF500CCC419 /* walk.xcdatamodeld in Sources */,
+				08F92854218B713C00A661A8 /* Walk+CoreDataProperties.swift in Sources */,
+				08F92853218B713C00A661A8 /* Walk+CoreDataClass.swift in Sources */,
 				085DEC9021832DF500CCC419 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +308,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CSPYV9P999;
-				INFOPLIST_FILE = walk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/walk/Supporting file/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "i-swiftIR.walk";
+				PRODUCT_MODULE_NAME = WalkProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,9 +324,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CSPYV9P999;
-				INFOPLIST_FILE = walk/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/walk/Supporting file/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "i-swiftIR.walk";
+				PRODUCT_MODULE_NAME = WalkProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
