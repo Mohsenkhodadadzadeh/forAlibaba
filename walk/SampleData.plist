@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>item1</key>
-	<dict>
-		<key>favorite</key>
-		<false/>
-		<key>timesWorn</key>
-		<integer>0</integer>
-		<key>lastWorn</key>
-		<date>2018-10-26T12:03:08Z</date>
-		<key>imageName</key>
-		<string>dog.png</string>
-		<key>rate</key>
-		<integer>0</integer>
-		<key>name</key>
-		<string>Dog</string>
-	</dict>
-	<key>item0</key>
+<array>
 	<dict>
 		<key>favorite</key>
 		<false/>
@@ -26,11 +10,25 @@
 		<key>lastWorn</key>
 		<date>2018-10-26T12:03:32Z</date>
 		<key>imageName</key>
-		<string>cat.png</string>
+		<string>Cat.jpg</string>
 		<key>rate</key>
 		<integer>0</integer>
 		<key>name</key>
 		<string>Cat</string>
 	</dict>
-</dict>
+	<dict>
+		<key>favorite</key>
+		<false/>
+		<key>timesWorn</key>
+		<integer>0</integer>
+		<key>lastWorn</key>
+		<date>2018-10-26T12:03:08Z</date>
+		<key>imageName</key>
+		<string>Dog.jpg</string>
+		<key>rate</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>Dog</string>
+	</dict>
+</array>
 </plist>
