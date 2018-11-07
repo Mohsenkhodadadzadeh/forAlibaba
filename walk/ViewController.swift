@@ -122,7 +122,11 @@ class ViewController: UIViewController {
                 try self.managedContext.save()
                 self.populate(walk: self.currentWalk)
             }catch let err as NSError {
+                if err.domain == NSCocoaErrorDomain && (err.code == NSValidationNumberTooLargeError || err.code == NSValidationNumberTooSmallError) {
+                    self.Rate(self.currentWalk)
+                }else {
                 print("It has error \(err) , \(err.userInfo)")
+                }
             }
         }
         alert.addAction(cancleAction)
