@@ -33,7 +33,7 @@ class CoreDataConnection {
         {
             return try managedContext.count(for: request)
         }catch let err as NSError {
-            print("Get count about \(request.entityName)) has error \n \(err) \(err.userInfo)")
+            print("Get count about \(request.entityName!)) has error \n \(err) \(err.userInfo)")
         }
         return -1
     }

@@ -9,7 +9,8 @@
 import UIKit
 import CoreData
 
-class WalkController {
+class WalkController : IDBAction{
+    typealias entityname =  Walk
     let fetch : NSFetchRequest<Walk>!
     
     init() {
